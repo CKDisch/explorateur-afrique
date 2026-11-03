@@ -19,7 +19,7 @@
 <div class="phrase"><b>Übergang:</b> Anschließend erläutert der Autor / die Autorin, wie …</div>
 <div class="phrase"><b>Letzter Abschnitt:</b> Im letzten Abschnitt wird erklärt, dass …</div>
 <div class="phrase"><b>Schluss:</b> Zusammenfassend zeigt der Text, dass …</div>
-<p class="small muted">Autor und Erscheinungsjahr nur nennen, wenn sie im Original stehen. Im Hauptteil sachlich und im Präsens bleiben. Eine eigene Meinung nur ergänzen, wenn sie verlangt wird.</p></section>
+<p class="small muted"><b>Vor dem Schreiben:</b> Unbekannte Wörter klären → Sinnabschnitte erkennen → Schlüsselwörter markieren → Kernaussagen notieren.</p><p class="small muted">Autor und Erscheinungsjahr nur nennen, wenn sie im Original stehen. Im Hauptteil sachlich und grundsätzlich im Präsens schreiben; für Vorzeitigkeit kann das Perfekt nötig sein. Eine eigene Meinung nur ergänzen, wenn sie verlangt wird.</p></section>
 <p class="small muted">Eigenständige Übungsbeispiele auf Grundlage der im Projekt behandelten Themen; keine Originalaufgaben der Lehrkraft. Antworten werden nur in diesem Browser gespeichert.</p>
 </main><script>
 const Q={
@@ -46,7 +46,7 @@ sections:[
 {skill:"Neuer Hauptgedanke",q:"Städte heizen sich im Sommer stark auf. Dachbegrünung kann helfen, Gebäude zu kühlen.",opts:["Zusammenlassen","Trennen"],a:1,why:"Wechsel von der Problembeschreibung zu einer Maßnahme."}
 ],
 errors:[
-{skill:"Präsens",q:"Welche Formulierung steht im passenden Präsens?",opts:["Der Autor erklärte die Ursachen.","Der Autor erklärt die Ursachen.","Der Autor wird die Ursachen erklärt haben."],a:1,why:"Eine Sachtextanalyse wird grundsätzlich im Präsens verfasst."},
+{skill:"Präsens",q:"Welche Formulierung steht im passenden Präsens?",opts:["Der Autor erklärte die Ursachen.","Der Autor erklärt die Ursachen.","Der Autor wird die Ursachen erklärt haben."],a:1,why:"Eine Sachtextanalyse steht grundsätzlich im Präsens. Vergangenes, das zeitlich davor liegt, kann im Perfekt ausgedrückt werden."},
 {skill:"Sachlichkeit",q:"Welche Formulierung passt in den Hauptteil?",opts:["Ich finde Eulen total süß.","Der zweite Sinnabschnitt beschreibt den Nutzen der Federn.","Der Autor hat bestimmt recht, glaube ich."],a:1,why:"Im Hauptteil ohne persönliche Meinung sachlich analysieren."},
 {skill:"Satzbau",q:"Welche Wortstellung nach „weil“ stimmt?",opts:["…, weil die Federn Geräusche dämpfen.","…, weil dämpfen die Federn Geräusche.","…, weil die Federn dämpfen Geräusche."],a:0,why:"Im Nebensatz steht das finite Verb am Ende."},
 {skill:"Satzbau",q:"Welcher Satz mit „wodurch“ ist richtig?",opts:["Die Blätter verdunsten Wasser, wodurch die Luft wird kühler.","Die Blätter verdunsten Wasser, wodurch die Luft kühler wird.","Die Blätter verdunsten Wasser, wodurch wird die Luft kühler."],a:1,why:"„wodurch“ leitet einen Nebensatz mit Verb am Ende ein."},
@@ -102,6 +102,21 @@ Q.errors.push(
 {skill:"Sachlichkeit",q:"Welche Formulierung deutet ein Motiv des Autors ohne Beleg an?",opts:["Die Autorin erklärt ein technisches Vorbild.","Der Text beschreibt mögliche Vorteile.","Der Autor schreibt das nur, weil er berühmt werden will."],a:2,why:"Über vermutete Absichten des Verfassers keine unbelegten Aussagen machen."},
 {skill:"Satzbau",q:"Welche Verbindung ist grammatisch richtig?",opts:["Die Forscher untersuchen die Struktur, wodurch neue Ideen entstehen können.","Die Forscher untersuchen die Struktur, wodurch können neue Ideen entstehen.","Die Forscher untersuchen die Struktur, wodurch neue Ideen können entstehen."],a:0,why:"Nach „wodurch“ steht das finite Verb am Ende."},
 {skill:"Genauigkeit",q:"Ein Abschnitt beschreibt die Kühlung durch Schatten und Verdunstung. Welche Überschrift ist am besten?",opts:["Schatten durch Bäume","Blätter der Bäume","Wie Bäume die Stadt abkühlen"],a:2,why:"Die dritte Überschrift erfasst beide Teilaspekte."}
+);
+
+Q.phrases.push(
+{skill:"Hauptteil",q:"Welche Formulierung beschreibt die Arbeitsweise des Autors am genauesten?",opts:["Die Autorin geht von einer Beobachtung aus und erklärt anschließend die Ursache.","Die Autorin macht etwas mit einer Beobachtung.","Die Autorin schreibt eine interessante Sache."],a:0,why:"Der Satz beschreibt die Abfolge der Darstellung präzise."},
+{skill:"Hauptteil",q:"Welche Formulierung führt eine Aussage als Behauptung ein, ohne sie als Tatsache auszugeben?",opts:["Die Autorin beweist ohne Zweifel, dass …","Die Autorin stellt die Behauptung auf, dass …","Die Autorin findet alles richtig."],a:1,why:"Zwischen einer Behauptung und einem belegten Ergebnis muss unterschieden werden."},
+{skill:"Hauptteil",q:"Welche Formulierung zeigt, dass der Abschnitt eine Frage klärt?",opts:["Im dritten Abschnitt beantwortet der Autor die Frage, ob …","Im dritten Abschnitt stellt der Autor irgendetwas fest.","Im dritten Abschnitt kommt noch eine Frage vor."],a:0,why:"Diese Wendung beschreibt die Funktion des Abschnitts konkret."}
+);
+Q.errors.push(
+{skill:"Zeitformen",q:"Welche Zeitform passt, wenn der Gecko etwas bereits vorher getan hat?",opts:["Der Gecko haftet an der Wand, nachdem er seine Füße aufgesetzt hat.","Der Gecko haftet an der Wand, nachdem er seine Füße aufsetzen wird.","Der Gecko haftet an der Wand, nachdem er seine Füße aufsetzen."],a:0,why:"Hauptaussage im Präsens; die vorher abgeschlossene Handlung steht im Perfekt."},
+{skill:"Satzbau",q:"Welche Verbindung mit „sodass“ ist richtig?",opts:["Die Füße haben viele Haftlamellen, sodass der Gecko an glatten Wänden haften kann.","Die Füße haben viele Haftlamellen, sodass kann der Gecko haften.","Die Füße haben viele Haftlamellen, sodass der Gecko kann haften."],a:0,why:"Nach „sodass“ steht das finite Verb am Ende; bei Modalverben steht der Infinitiv davor."},
+{skill:"Genauigkeit",q:"Der Text nennt zahlreiche Räume im Termitenhügel. Welche Zusammenfassung ist angemessen knapp?",opts:["Es gibt Arbeiterquartiere, Bruträume, Pilzgärten und sehr viele weitere einzelne Räume.","Im Inneren des Termitenhügels befinden sich verschiedene Bereiche mit unterschiedlichen Funktionen.","Im Termitenhügel gibt es gar keine Räume."],a:1,why:"Eine Sachtextzusammenfassung bündelt unwichtige Einzelheiten, ohne den Sinn zu verändern."},
+{skill:"Genauigkeit",q:"Welche Formulierung verbessert die ungenaue Aussage „Der Gecko hat klebrige Füße“?",opts:["Der Gecko ist ziemlich besonders.","Der Gecko besitzt Haftlamellen, mit denen er an glatten Oberflächen haften kann.","Der Gecko hat Füße und kann laufen."],a:1,why:"Ein treffender Fachbegriff und seine Funktion machen die Aussage genauer."},
+{skill:"Sachlichkeit",q:"In einem sachlichen Hauptteil steht: „Das ist die beste Erfindung aller Zeiten!“ Was ist daran zu verbessern?",opts:["Die persönliche Wertung weglassen und die beschriebene Wirkung sachlich nennen.","Den Satz noch stärker übertreiben.","Die Behauptung ohne Textbeleg beibehalten."],a:0,why:"Der Hauptteil enthält keine unbelegten persönlichen Wertungen."},
+{skill:"Genauigkeit",q:"Welche Verbesserung verhindert Wortwiederholungen, ohne den Inhalt zu verändern?",opts:["Im Abschnitt beschreibt der Autor die Wirkung. Anschließend erläutert er die Anwendung.","Im Abschnitt beschreibt der Autor die Wirkung. Anschließend beschreibt der Autor die Anwendung.","Im Abschnitt beschreibt der Autor die Wirkung. Anschließend beschreibt der Abschnitt die Anwendung."],a:0,why:"Verschiedene treffende Analyseverben verbessern den Stil."},
+{skill:"Sachlichkeit",q:"Im Ausgangstext steht, dass Forschende die Luftströmung noch untersuchen. Welche Wiedergabe ist korrekt?",opts:["Die Luftströmung ist vollständig erforscht.","Die Forschenden untersuchen weiterhin, wie die Luft durch die Gänge strömt.","Die Forschenden haben keine Ahnung von Termiten."],a:1,why:"Eine Zusammenfassung darf den Forschungsstand nicht verfälschen."}
 );
 const KEYS={phrases:"Formulierungen",sections:"Sinnabschnitte",errors:"Typische Fehler"};
 const STORE="joshua-deutsch-focus-v2";
